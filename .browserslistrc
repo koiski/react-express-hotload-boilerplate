@@ -1,0 +1,8 @@
+> 1%
+not op_mini all
+edge > 16
+chrome > 66
+firefox > 57
+ios_saf >= 11.3
+not dead
+not ie <= 11

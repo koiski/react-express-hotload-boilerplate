@@ -1,0 +1,70 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true,
+      "experimentalDecorators": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "eol-last": 2,
+    "max-len": ["error", 135, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
+    }],
+    "no-underscore-dangle": [0],
+    "linebreak-style": 0,
+    "no-var": 2,
+    "object-curly-newline": 0,
+    "brace-style": [2, "1tbs", {
+      "allowSingleLine": true
+    }],
+    "operator-linebreak": 0,
+    "react/destructuring-assignment": 1,
+    "react/display-name": 0,
+    "react/jsx-boolean-value": 2,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-quotes": 0,
+    "react/jsx-no-undef": 2,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-sort-props": 0,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/no-did-mount-set-state": 2,
+    "react/no-did-update-set-state": 2,
+    "react/no-multi-comp": 0,
+    "react/no-unknown-property": 2,
+    "react/prop-types": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/self-closing-comp": 2,
+    "react/jsx-wrap-multilines": 0,
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 0,
+    "quotes": [2, "single"],
+    "space-before-function-paren": [2, {
+      "anonymous": "always",
+      "named": "never"
+    }],
+    "strict": [2, "global"]
+  },
+  "plugins": ["security", "react", "react-hooks"],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.base.js"
+      }
+    }
+  },
+  "extends": ["plugin:security/recommended", "airbnb"]
+}

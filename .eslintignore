@@ -1,0 +1,6 @@
+server.js
+dist/*
+node_modules/*
+**/node_modules/*
+webpack.config.*
+static/js
