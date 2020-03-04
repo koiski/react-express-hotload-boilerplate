@@ -19,6 +19,9 @@ httpLogger(app);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+console.log(path.join(__dirname, '../static', 'js'));
+console.log("__dirname = %s", path.resolve(__dirname));
+
 // Set up routes to index.html, css and js
 app.use('/assets', express.static(path.join(__dirname, '../static', 'assets')));
 app.use('/favicon.ico', express.static(path.join(__dirname, '../static/favicon.ico')));
