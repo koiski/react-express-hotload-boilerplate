@@ -1,5 +1,7 @@
-import { hot } from 'react-hot-loader';
+import { hot } from 'react-hot-loader/root';
+import { App } from './App';
 
-import App from './App';
+// Active react hot loader
+hot(App);
 
-export default hot(App);
+export { App };

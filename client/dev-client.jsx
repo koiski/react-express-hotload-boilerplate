@@ -1,17 +1,12 @@
-import "core-js/stable";
-import "regenerator-runtime/runtime";
-import HotApp from './HotApp';
+// import "core-js/stable";
+//import "regenerator-runtime/runtime";
+
 import React from 'react';
 import { render } from 'react-dom';
 
-console.log("yay");
+// Activate hot loader
+import { App } from './HotApp';
 
-// ReactDOM.render(, document.getElementById('app-container'));
 
-const root = document.createElement('div');
-document.body.appendChild(root);
+render(<App />, document.getElementById('app-container'));
 
-render(
-    <HotApp />,
-    root
-)
