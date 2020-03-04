@@ -3,7 +3,7 @@ const config = require('./webpack.config.base');
 const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 
 config.mode = 'development';
-config.devtool = 'source-map';
+config.devtool = 'eval-cheap-source-map';
 
 config.entry['app'].unshift('webpack-hot-middleware/client?quiet=true');
 config.entry['app'].pop();

@@ -9,7 +9,7 @@ module.exports = {
         filename: '[name].bundle.js',
         chunkFilename: '[name].bundle.js',
         // Defines the root for all webpack-generated files to be the static folder
-        publicPath: '/js/',
+        publicPath: '/static/',
       },
     optimization: {
         splitChunks: {
@@ -21,9 +21,11 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js', '.jsx'],
-        alias: {}
+        alias: {
+        }
     },
-    plugins: [],
+    plugins: [
+    ],
     module: {
         rules: [
             {
